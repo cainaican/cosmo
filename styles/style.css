@@ -152,7 +152,8 @@ h3{
 }
 .block-inner{
     display: block;
-    width:600px;
+    width:600px; 
+    
 }
 .block-description{
     display: flex;
