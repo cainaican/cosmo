@@ -50,11 +50,18 @@ button{
 }
 .header{
     background-image:url("../img-cover/background1.jpg");
-    background-position: center;     /* картинка всегда по центру */
+    /* background-position: center;     картинка всегда по центру */
     background-repeat: no-repeat;     /* не повторяется*/
     background-size:cover;         /* растянуть на все пространство*/
     height:100vh;               /*весь вьюпорт*/
     
+}
+
+.header__gradient {
+    width: 100%;
+    height: 100%;
+    background: rgb(254,254,254);
+    background: linear-gradient(180deg, rgba(254,254,254,0) 50%, rgb(0, 0, 0) 100%);
 }
 
 .container{ /*базовые правила для контейнера кроме падингов*/
