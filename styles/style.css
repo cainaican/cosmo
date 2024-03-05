@@ -57,12 +57,20 @@ button{
     
 }
 
-.header__gradient {
+.gradient {
     width: 100%;
     height: 100%;
     background: rgb(254,254,254);
+}
+
+.gradient-bottom {
     background: linear-gradient(180deg, rgba(254,254,254,0) 50%, rgb(0, 0, 0) 100%);
 }
+
+.gradient-up {
+    background: linear-gradient(0deg, rgba(254,254,254,0) 50%, rgb(0, 0, 0) 100%);
+}
+
 
 .container{ /*базовые правила для контейнера кроме падингов*/
     max-width: 1220px;
@@ -140,41 +148,100 @@ h2{
     font-family: "spaceagecycillic";
     font-size: 48px;
 }
-h3{
+/* h3 {
     font-family:"sf-pro-display" ;
     font-size: 30px;
-}
+} */
 
-.section-block{
+.about {
     background-image:url(../img-about-us/background.jpg);
-    height: 2497px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 
 } 
 
 
-.section__block{
+
+
+.card {
     display: flex;
     gap:100px;
     margin-bottom: 150px;
 }
-.block-inner{
+
+.card__img {}
+
+.card__description{
     display: block;
     width:600px; 
-    
 }
-.block-description{
+.card__heading {
+    font-family:"sf-pro-display" ;
+    font-size: 30px;
+}
+.card__columns {
+    
+    display: flex;
+    gap: 53px;
+    margin: 50px 0px;
+}
+/* .block-description{
     display: flex;
     gap:53px;
     margin-bottom: 50px;
-}
-.pharagraph-description{
+} */
+.card__label{
     color: #036CCA;
-    padding-bottom:31px;
+    font-family:"sf-pro-display" ;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    /* padding-bottom:31px; */
 }
-.block-description__pharagraph{
+
+.card__table {
+    border-bottom: 1px solid white;
+}
+.card__table-thead {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+}
+.card__table-th {
+    font-size: 16px;
+    font-family:"sf-pro-display" ;
+    width: 105px;
+    gap: 20px;
+    padding: 10px 10px;
+}
+.card__table-th:first-child {
+    width: 105px;
+    gap: 20px;
+    padding: 10px 10px 10px 0px;
+}
+.card__table-th:last-child {
+    width: 105px;
+    gap: 20px;
+    padding: 10px 0px 10px 10px;
+}
+.card__table-tr:first-child td {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.card__table-tr td {
+    text-align: center;
+    padding: 10px 0px 5px 0px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* .block-description__pharagraph{
     width: 165px;
     
-}
+} */
 
 /* блок как все происходит */
 

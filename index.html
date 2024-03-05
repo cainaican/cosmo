@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__gradient">
+        <div class="gradient gradient-bottom">
             <div class="container">  <!--Основное содержание -->
             <div class="header__inner"> <!--обертка внутри контейнера для управления блоками -->
                 <div class="header__top"> <!--навигация -->
@@ -55,26 +55,75 @@
         </div>
         
     </header>
-        <div class="section-block">
+    
+    <!-- <section class="section-block"> -->
+    <section class="about">
+        <div class="gradient gradient-up">
             <div class="container" >
                 <h2>о нас</h2>
-                <section class="section__block">
-                    <img src="img-about-us\main_richard-branson-men-in-power_posta-magazine.jpg">
-                        <div class="block-inner">
-                            <h3>Virgin Galactic</h3>
-                            <p class="pharagraph-description">суборбитальный полет</p>
-                                <div class="block-description">
-                                    <p class="block-description__pharagraph">Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический" суборбитальный полет со 
-                                    своим основателем, британским миллиардером Ричардом Брэнсоном на борту.</p>
-                                    <p class="block-description__pharagraph">Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью 
-                                    самолета-носителя VMS Eve.Позже он отсоединился от самолета-носителя.</p>
-                                    <p class="block-description__pharagraph">Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты 
-                                    начнутся до 2022 года. </p>
-                                </div>
-                            <img src="img-about-us/table.png">
-                            <button class="button" type="button">забронировать полет</button>
-                        </div>
-                </section>
+
+                <div class="card">
+                    <img class="card__img" src="img-about-us\main_richard-branson-men-in-power_posta-magazine.jpg">
+
+                    <!-- <div class="block-inner"> -->
+                    <div class="card__description">
+
+                        <h3 class="card__heading" >Virgin Galactic</h3>
+                        <!-- <p class="pharagraph-description">суборбитальный полет</p> -->
+                        <p class="card__label">суборбитальный полет</p>
+
+                        <ul class="card__columns">
+                            <li class="card__column"><p>Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический" суборбитальный полет со 
+                                своим основателем, британским миллиардером Ричардом Брэнсоном на борту.</p></li>
+                            <li class="card__column" ><p>Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью 
+                                самолета-носителя VMS Eve.Позже он отсоединился от самолета-носителя.</p></li>
+                            <li class="card__column"><p>Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты 
+                                начнутся до 2022 года. </p></li>
+                        </ul>
+
+                            <!-- <div class="block-description">
+                                <p class="block-description__pharagraph">Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический" суборбитальный полет со 
+                                своим основателем, британским миллиардером Ричардом Брэнсоном на борту.</p>
+                                <p class="block-description__pharagraph">Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью 
+                                самолета-носителя VMS Eve.Позже он отсоединился от самолета-носителя.</p>
+                                <p class="block-description__pharagraph">Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты 
+                                начнутся до 2022 года. </p>
+                            </div> -->
+                        <!-- <img src="img-about-us/table.png"> -->
+
+                        <table class="card__table">
+                            <thead class="card__table-thead">
+                                <tr class="card__table-tr">
+                                    <th class="card__table-th"><p>время в пути</p></th>
+                                    <th class="card__table-th"><p>расстояние</p></th>
+                                    <th class="card__table-th"><p>в невесомости</p></th>
+                                    <th class="card__table-th"><p>стоимость</p></th>
+                                    <th class="card__table-th"><p>вернешься?</p></th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="card__table-tbody">
+                                <tr class="card__table-tr">
+                                    <td class="card__table-td">10</td>
+                                    <td class="card__table-td">100</td>
+                                    <td class="card__table-td">4-5</td>
+                                    <td class="card__table-td">250</td>
+                                    <td class="card__table-td">99</td>
+                                </tr>
+                                <tr class="card__table-tr">
+                                    <td class="card__table-td">мин</td>
+                                    <td class="card__table-td">км</td>
+                                    <td class="card__table-td">мин</td>
+                                    <td class="card__table-td">тыс. дол</td>
+                                    <td class="card__table-td">%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button class="button" type="button">забронировать полет</button>
+                    </div>
+                </div>
+
                 <div class="section__block2">
                     <section class="section__block">
                         <div class="block-inner">
@@ -85,10 +134,10 @@
                                         2021года впервые в истории компании вывела на космическую высоту капсулу с людьми, с самым богатым 
                                         человеком мира Джеффом  Безосом на борту.</p>
                                     <p class="block-description__pharagraph">New Shepard высотой 18 м и шириной 4 м - многоразовый космический аппарат.
-                                         Бустерная установка поднимает герметичное пассажирское судно на высоту около 76 км. Импульс преподносит капсулу 
-                                         вверх в космос.</p>
+                                            Бустерная установка поднимает герметичное пассажирское судно на высоту около 76 км. Импульс преподносит капсулу 
+                                            вверх в космос.</p>
                                     <p class="block-description__pharagraph">После этого она опускается на землю под тремя парашютами. Ракета-носитель
-                                         тоже возвращается домой. </p>
+                                            тоже возвращается домой. </p>
                                 </div>
                             <img src="img-about-us/table2.png">
                             <button class="button" type="button">забронировать полет</button>
@@ -96,6 +145,7 @@
                         <img src="img-about-us\4f05a1c-------555.png">
                     </section>    
                 </div>
+
                 <div class="section__block3">
                     <section class="section__block">
                         <img src="img-about-us\41-e1592839258323.png">
@@ -104,15 +154,15 @@
                                 <p class="pharagraph-description">А может на Луну или Марс?</p>
                                     <div class="block-description">
                                         <p class="block-description__pharagraph">В 2016 году на 67-м ежегодном Международном конгрессе астронавтики
-                                             Илон Маск заявил, что оптимистичный временной график предусматривает первый полет к Марсу в 2022 году
-                                              (доставка груза).</p>
+                                                Илон Маск заявил, что оптимистичный временной график предусматривает первый полет к Марсу в 2022 году
+                                                (доставка груза).</p>
                                         <p class="block-description__pharagraph">Полет с экипажем - в 2024 году.
                                             На Красную планету экипаж прибудет в 2025-26 году.
                                             "Я начал SpaceX, потому что хотел помочь снизить стоимость космических перевозок, чтобы основать жизни
-                                             на другой планете".</p>
+                                                на другой планете".</p>
                                         <p class="block-description__pharagraph">Если все пойдет по плану, то благодаря Маск к 2050 году жителями
-                                             Красной планеты смогут себя назвать около миллиона человек. Туда их доставит флотилия из тысячи
-                                              кораблей Starship. </p>
+                                                Красной планеты смогут себя назвать около миллиона человек. Туда их доставит флотилия из тысячи
+                                                кораблей Starship. </p>
                                     </div>
                                 <img src="img-about-us/table3.png">
                                 <button class="button" type="button">забронировать полет</button>
@@ -120,24 +170,25 @@
                     </section>
                 </div>
             </div>
+        </div> 
+    </section>
+    <div class="discription-block">
+        <div class="container" >
+            <h2>Как все происходит</h2>
+            <img class="constellation"src="img-how-all-happens\constellation.png">
         </div>
-            <div class="discription-block">
-                <div class="container" >
-                    <h2>Как все происходит</h2>
-                    <img class="constellation"src="img-how-all-happens\constellation.png">
-                </div>
-            </div>  
-            <div class="booking-blok">
-                <div class="container">
-                    <div class="block-description">
-                        <h2>Успей забронировать!</h2>
-                        <p class="block-description__pharagraph">Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты начнутся до 2022 года. 
-                            Компания уже несколько лет продает билеты на такие полеты по 250 тыс долл.</p>
-                        <p class="block-description__pharagraph">Virgin Galactic получила задатков более чем 80 млн долл,
-                             а количество желающих превышает 600 человек.</p>
-                    </div>
-                </div>
+    </div>  
+    <div class="booking-blok">
+        <div class="container">
+            <div class="block-description">
+                <h2>Успей забронировать!</h2>
+                <p class="block-description__pharagraph">Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты начнутся до 2022 года. 
+                    Компания уже несколько лет продает билеты на такие полеты по 250 тыс долл.</p>
+                <p class="block-description__pharagraph">Virgin Galactic получила задатков более чем 80 млн долл,
+                        а количество желающих превышает 600 человек.</p>
             </div>
+        </div>
+    </div>
         
         
     
