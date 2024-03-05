@@ -1,0 +1,289 @@
+* 
+::after
+::before{
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: "sf-pro-display";
+    src: url("../fonts/SF-Pro-Display-Regular.woff") format("woff"),url(../fonts/SF-Pro-Display-Regular.woff2) format("woff2"),;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "sf-pro-display";
+    src: url("../fonts/SF-Pro-Display-Bold.woff") format("woff"),url(../fonts/SF-Pro-Display-Bold.woff2) format("woff2"),;
+    font-style: bold;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "spaceagecycillic";
+    src: url("../fonts/spaceagecyrillic-regular.woff") format("woff"),url(../fonts/spaceagecyrillic-regular.woff2) format("woff2"),;
+    font-style: bold;
+    font-weight: bold;
+}
+body{
+    font-family: "sf-pro-display";
+    color:#FFFFFF;
+}
+ul{
+    list-style: none;
+    font-size: 18px;
+
+}
+a {
+    text-decoration: none;
+    color:inherit;/*наследуемый*/
+}
+button{
+    margin:0 auto;
+    margin-top: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-style: inset;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.1);
+    color:white;
+    border-color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    width:600px;
+}
+.header{
+    background-image:url("../img-cover/background1.jpg");
+    background-position: center;     /* картинка всегда по центру */
+    background-repeat: no-repeat;     /* не повторяется*/
+    background-size:cover;         /* растянуть на все пространство*/
+    height:100vh;               /*весь вьюпорт*/
+    
+}
+
+.container{ /*базовые правила для контейнера кроме падингов*/
+    max-width: 1220px;
+    margin:0 auto;
+    padding:0 10px;
+    
+}
+
+
+.menu_list{
+    display: flex;
+    margin-top: 6px;
+    
+}
+.menu_item{
+    margin-right: 30px;
+}
+.menu_item:nth-child(4) {
+    margin-left: 6px;
+}
+.menu_item:hover{
+    color:#CB0E0E;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.phone{
+    display: flex;
+    font-size: 24px;
+    gap:22px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 892px){
+    .header__top{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .menu_list{
+        flex-direction: column;
+        gap:30px;
+    }
+}
+.text{
+    font-family: "spaceagecycillic";
+    font-size: 60px;
+    padding-top: 250px;
+}
+.text2{
+    font-family:"spaceagecycillic" ;
+    font-size: 110px;
+}
+.content-text{
+    font-size: 24px;
+    display: flex;
+    gap:40px;
+    padding-top: 20px;
+}
+.description-text{
+    display: flex;
+    justify-content: flex-end;
+    gap:60px;
+    margin-left: 670px;
+    margin-top: 120px;
+    
+}
+
+/* блок о нас  */
+h2{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: "spaceagecycillic";
+    font-size: 48px;
+}
+h3{
+    font-family:"sf-pro-display" ;
+    font-size: 30px;
+}
+
+.section-block{
+    background-image:url(../img-about-us/background.jpg);
+    height: 2497px;
+
+} 
+
+
+.section__block{
+    display: flex;
+    gap:100px;
+    margin-bottom: 150px;
+}
+.block-inner{
+    display: block;
+    width:600px;
+}
+.block-description{
+    display: flex;
+    gap:53px;
+    margin-bottom: 50px;
+}
+.pharagraph-description{
+    color: #036CCA;
+    padding-bottom:31px;
+}
+.block-description__pharagraph{
+    width: 165px;
+    
+}
+
+/* блок как все происходит */
+
+.discription-block{
+    background-image: url("../img-how-all-happens/background3.png");
+}
+.constellation{
+    margin-left: 238px;
+    margin-bottom: 100px;
+}
+
+/* блок успей забронировать */
+
+.booking-blok{
+    background-image: url("../img-booking/background4.png");
+    width: 1920px;
+    height: 914px;
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-size:cover; 
+    padding-top: 50px;
+}
+
+/* {
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: "Space Age Cyrillic";
+    src: url(fonts\spaceagecyrillic_regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    color:white;
+    
+}
+
+.header{
+    background-image:url(img-cover/фон1.jpg);
+    height: 1100px;
+}
+.nav{
+    display: flex;
+    
+}
+.list{
+    display: flex;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.nav__pharagraph{
+    padding-left: 400px;
+    padding-top: 50px; 
+    font-size: 25px;
+}
+.nav__icon{
+    padding-left: 40px;
+    padding-top: 75px;
+    padding-bottom: 32px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.list__list-item{
+    padding-right: 50px;
+    list-style-type: none;
+}
+.list__list-item:first-child a {
+    color:red;
+}
+.section__img-fonts{
+    margin-top: 400px;
+    padding-left: 150px;
+}
+.section__text{
+    padding-bottom: 30px;
+}
+.section__pharagraph{
+    display: flex;
+    padding-left:110px;
+    justify-content: space-around;
+    width:760px;
+}
+.section__btn{
+    padding-left: 150px;
+    padding-top: 40px;
+}
+.section__img-text{
+    padding-left: 1155px;
+    padding-top: 60px;
+}
+.section__img-text img:last-child{
+    padding-bottom: 33px;
+    padding-left: 60px;
+}
+
+/* раздел "о нас"
+
+
+h1{
+    font-family: "Space Age Cyrillic";
+}
+
+.main-backgroung-image{
+    background-image: url("img-about-us/background.jpg");  /* без кавычек на работало
+    margin-top: 0px;
+}
+.main-width{
+    width:1200px;
+    margin:auto;
+    padding: 50px 360px;
+    box-sizing: content-box;
+    margin-top: 0px;
+}
+h1{
+    text-align: left;
+}
+*/
