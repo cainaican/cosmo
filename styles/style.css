@@ -281,3 +281,104 @@ h2{
     background-size:cover; 
     padding-top: 50px;
 }
+
+
+/*плохой вариант с position
+/* .how__box {
+    position: relative;
+} 
+ .how__box p:nth-child(1) {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.how__box p:nth-child(2) {
+    position: absolute;
+    left: 36px;
+    top: 2px;
+}
+
+.how__box p:nth-child(3) {
+    position: absolute;
+    left: 180px;
+    top: 87px;
+}
+.how__box p:nth-child(4) {
+    position: absolute;
+    left: 233px;
+    top: 180px;
+}
+
+.how__box p:nth-child(4):hover {
+    position: absolute;
+    left: 233px;
+    top: 160px;
+}
+
+.how__box p:nth-child(4):hover::before {
+    position: absolute;
+    top: 0px;
+}
+.how__box p:nth-child(5) {
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+.how__box p:nth-child(6) {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+}
+.how__box p:nth-child(7) {
+    position: absolute;
+    left: 350px;
+    top: 350px;
+}
+
+.how__box p::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -15px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #036CCA;
+    border-radius: 50%;
+}
+
+.how__box p:hover::before {
+    display: block;
+    transition: all .5s;
+
+}
+
+.how__box p:hover {
+    color: #036CCA;
+    font-size: 36px;
+    transition: all .5s;
+} */
+
+
+/**норм вариант*/
+
+.how__box {
+    text-align: center;
+}
+
+.how__box circle, 
+.how__box text
+{
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.how__box g:hover circle {
+    fill: #036CCA;
+    r: 20px;
+}
+
+.how__box g:hover text {
+    fill: #036CCA;
+    font-size: 36px;
+}
