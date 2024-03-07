@@ -237,7 +237,9 @@ h2{
     font-weight: 600;
     font-size: 14px;
 }
-
+.card:last-child{
+    margin-bottom: 0;
+}
 /* .block-description__pharagraph{
     width: 165px;
     
@@ -245,12 +247,27 @@ h2{
 
 /* блок как все происходит */
 
-.discription-block{
+.how-all-happens{
     background-image: url("../img-how-all-happens/background3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
-.constellation{
-    margin-left: 238px;
-    margin-bottom: 100px;
+.constellation{}
+.constellation-circle{
+    width:20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.constellation__line-1{
+    width: 173px;
+    transform: rotate(29deg);
+}
+.constellation__line-2{
+    width: 106px;
+    transform: rotate(59deg);
 }
 
 /* блок успей забронировать */
@@ -264,101 +281,3 @@ h2{
     background-size:cover; 
     padding-top: 50px;
 }
-
-/* {
-    box-sizing:border-box;
-}
-@font-face {
-    font-family: "Space Age Cyrillic";
-    src: url(fonts\spaceagecyrillic_regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-body{
-    font-family: "Roboto",sans-serif;
-    color:white;
-    
-}
-
-.header{
-    background-image:url(img-cover/фон1.jpg);
-    height: 1100px;
-}
-.nav{
-    display: flex;
-    
-}
-.list{
-    display: flex;
-    padding-left: 150px;
-    padding-top: 50px;
-}
-.nav__pharagraph{
-    padding-left: 400px;
-    padding-top: 50px; 
-    font-size: 25px;
-}
-.nav__icon{
-    padding-left: 40px;
-    padding-top: 75px;
-    padding-bottom: 32px;
-}
-a{
-    color:white;
-    text-decoration: none;
-}
-.list__list-item{
-    padding-right: 50px;
-    list-style-type: none;
-}
-.list__list-item:first-child a {
-    color:red;
-}
-.section__img-fonts{
-    margin-top: 400px;
-    padding-left: 150px;
-}
-.section__text{
-    padding-bottom: 30px;
-}
-.section__pharagraph{
-    display: flex;
-    padding-left:110px;
-    justify-content: space-around;
-    width:760px;
-}
-.section__btn{
-    padding-left: 150px;
-    padding-top: 40px;
-}
-.section__img-text{
-    padding-left: 1155px;
-    padding-top: 60px;
-}
-.section__img-text img:last-child{
-    padding-bottom: 33px;
-    padding-left: 60px;
-}
-
-/* раздел "о нас"
-
-
-h1{
-    font-family: "Space Age Cyrillic";
-}
-
-.main-backgroung-image{
-    background-image: url("img-about-us/background.jpg");  /* без кавычек на работало
-    margin-top: 0px;
-}
-.main-width{
-    width:1200px;
-    margin:auto;
-    padding: 50px 360px;
-    box-sizing: content-box;
-    margin-top: 0px;
-}
-h1{
-    text-align: left;
-}
-*/
