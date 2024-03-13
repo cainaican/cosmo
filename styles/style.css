@@ -300,7 +300,6 @@ h2{
     background-repeat: no-repeat;
     height: 100vh;
 }
-.constellation{}
 .constellation-circle{
     width:20px;
     height: 20px;
@@ -442,12 +441,20 @@ h2{
     fill: #036CCA;
     font-size: 36px;
 }
+.how__box g:last-child:hover text {
+    fill: #036CCA;
+    font-size: 22px;
+}
 /* блок спец предложение */
 .offer{
     background-image: url("../img-special-offer/фон4.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250vh;
+    height: 2359px;
+    max-height: 2359px;
+}
+.offer__title {
+    padding-top: 100px;
 }
 .price{
     display:flex;
@@ -495,12 +502,12 @@ h2{
     margin-bottom: -74px;
 }
 .gallery{
-    
+    display: flex;
     margin-top: 200px;
     margin-bottom: 50px;
     border:1px solid white;
     
-    padding:99px 195px 101px 205px;
+    padding:99px 0px 101px 0px;
 }
 .gallery-description{
     font-size: 24px;
@@ -516,6 +523,8 @@ h2{
     background-image: url(/img-contact/фон.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 810px;
+    max-height: 810px;
 }
 .card-contacts-guarantees{
     display: flex;
@@ -533,7 +542,7 @@ h2{
 .text-input{
     width:500px;
     border:none;
-    border-bottom:1px solid white;
+    border-bottom:1px solid rgb(37, 24, 24);
     background-color: rgba(0,0,0,0.1);
     padding: 10px;
 
@@ -585,4 +594,40 @@ input::placeholder{
 .info .menu_item{
     line-height: 30px;
     
+}
+
+/***
+1 - id
+1 - class, псевдоклассы
+1 - element (tag), псевдоэлементы
+*/
+
+/*011*/
+div.container {
+}
+
+/*101*/
+div#container {
+
+}
+
+/*003*/
+div > p::before {
+
+}
+
+
+/*112*/
+ul#primary-nav li.active {
+
+}
+
+/*022*/
+ul[class="primary-nav"] + li:checked {
+
+}
+
+/*013*/
+nav > a:hover::before {
+
 }
