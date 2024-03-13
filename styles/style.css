@@ -48,8 +48,17 @@ button{
     padding-bottom: 16px;
     width: 600px;
     margin-left: 7px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 }
+.button-about{
+    margin-top: 36px;
+    width: 299px;
+    font-size: 17px;
+    padding-bottom: 23px;
+    padding-bottom: 19px;
+}
+
+
 .header{
     background-image:url("../img-cover/background1.jpg");
     /* background-position: center;     картинка всегда по центру */
@@ -109,21 +118,19 @@ button{
     margin-top: 74px;
 }
 
-@media screen and (max-width: 892px){
-    .header__top{
+@media screen and (max-width: 1049px){
+    .header__top,.menu_list,.header__description{
         flex-direction: column;
         gap: 30px;
-        align-items: center;
+        align-items:start;
     }
-    .menu_list{
-        flex-direction: column;
-        gap:30px;
+    
     }
-}
+
 .text{
     font-family: "spaceagecycillic";
     font-size: 60px;
-    padding-top: 290px;
+    padding-top: 291px;
     padding-left: 7px;
 }
 
@@ -208,7 +215,8 @@ h2{
 .card__columns {
     display: flex;
     gap: 53px;
-    margin: 50px 0px;
+    margin-bottom: 58px;
+    margin-top: 50px;
 }
 .card__columns li:nth-child(1){
     margin-top: -18px;
@@ -216,6 +224,7 @@ h2{
     line-height: 19px;
     font-size: 16px;
 }
+
 
 .card__columns li:nth-child(2){
     line-height: 20px;
