@@ -197,6 +197,12 @@ h2{
     margin-bottom: 150px;
 }
 
+.card:nth-child(1){
+
+}
+.card:nth-child(){
+
+}
 .card__img {
     margin-top: 7px;
     margin-left: 8px;
@@ -293,6 +299,11 @@ h2{
 
 /* блок как все происходит */
 
+.how__box{
+    text-align: center;
+    padding-right: 53px;
+}
+
 .how-all-happens{
     background-image: url("../img-how-all-happens/background3.png");
     background-position: center;
@@ -300,6 +311,13 @@ h2{
     background-repeat: no-repeat;
     height: 100vh;
 }
+.how-all-happens__heading{
+    width: 578px;
+    padding-top: 168px;
+    padding-left: 4px;
+}
+
+
 .constellation-circle{
     width:20px;
     height: 20px;
@@ -331,13 +349,17 @@ h2{
 .book__header{
     width: 576px;
     margin-right: 242px;
+    padding-top: 222px;
 }
+
 .book__pharagraphs{
     display: flex;
-    gap:53px;
+    gap: 53px;
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 224px;
+    line-height: 17px;
 }
+
 .book__pharagraph{
     width:165px;
 
@@ -454,8 +476,10 @@ h2{
     max-height: 2359px;
 }
 .offer__title {
-    padding-top: 100px;
+    width: 500px;
+    padding-top: 191px;
 }
+
 .price{
     display:flex;
     justify-content: center;
@@ -470,9 +494,11 @@ h2{
 .price__discount{
     font-size: 24px;
     text-align: center;
-    padding-top: 43px;
-    padding-bottom: 111px;
+    padding-top: 38px;
+    padding-bottom: 105px;
+    line-height: 29px;
 }
+
 .price__discount-action{
     color:#CB0E0E;
 }
@@ -491,10 +517,13 @@ h2{
 }
 .service{
     display: flex;
-    margin-top: 142px;
+    margin-top: -139px;
 }
 .service-list{
     list-style-type: disc;
+}
+.service-button{
+    padding-top: 200px;
 }
 .service-img{
     padding-top: 100px;
@@ -503,7 +532,7 @@ h2{
 }
 .gallery{
     display: flex;
-    margin-top: 200px;
+    margin-top: 227px;
     margin-bottom: 50px;
     border:1px solid white;
     
