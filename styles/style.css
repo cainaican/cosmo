@@ -47,15 +47,17 @@ button{
     padding-top: 15px;
     padding-bottom: 16px;
     width: 600px;
-    margin-left: 7px;
+    margin-left: 18px;
     padding-bottom: 14px;
+    letter-spacing: -0.75px;
 }
 .button-about{
-    margin-top: 36px;
+    margin-top: 50px;
     width: 299px;
+    height:60px;
     font-size: 17px;
-    padding-bottom: 23px;
-    padding-bottom: 19px;
+    margin-left:-1px;
+    letter-spacing:0px;
 }
 
 
@@ -64,7 +66,8 @@ button{
     /* background-position: center;     картинка всегда по центру */
     background-repeat: no-repeat;     /* не повторяется*/
     background-size:cover;         /* растянуть на все пространство*/
-    height:100vh;               /*весь вьюпорт*/
+    height:1100px;          
+    max-height: 1100px;;
     
 }
 
@@ -94,7 +97,7 @@ button{
 .menu_list{
     display: flex;
     margin-top: 79px;
-    margin-left: 7px;
+    margin-left: 19px;
 }
 .menu_item{
     margin-right: 30px;
@@ -114,8 +117,8 @@ button{
     display: flex;
     font-size: 24px;
     gap:22px;
-    margin-right: 147px;
-    margin-top: 74px;
+    margin-right: 134px;
+    margin-top: 77px;
 }
 
 @media screen and (max-width: 1049px){
@@ -130,15 +133,15 @@ button{
 .text{
     font-family: "spaceagecycillic";
     font-size: 60px;
-    padding-top: 291px;
-    padding-left: 7px;
+    padding-top: 290px;
+    padding-left: 19px;
 }
 
 .text2{
     font-family:"spaceagecycillic" ;
     font-size: 110px;
     margin-top: -18px;
-    margin-left: 8px;
+    margin-left: 19px;
 }
 
 .content-text{
@@ -146,102 +149,96 @@ button{
     display: flex;
     gap:40px;
     padding-top: 17px;
-    margin-left: 8px;
+    margin-left: 21px
 }
 
 .description-text{
     display: flex;
     justify-content: flex-end;
     gap: 60px;
-    margin-left: 670px;
+    margin-left: 671px;
     margin-top: 120px;
     font-size: 14px;
 }
 
 .description-text p:first-child{
-    width: 165px;
+    width: 164px;
     margin-top: -8px;
-    margin-right: -8px;
+    margin-right: -9px;
     line-height: 17px;
 }
 
 .description-text p:last-child{
     width:164px;
     margin-top: -8px;
-    margin-right: 13px;
+    margin-right: 1px;
     line-height: 17px;
 }
 
 /* блок о нас  */
 h2{
-    padding-top: 252px;
-    padding-left: 9px;
+    padding-top: 100px;
+    padding-left: 17px;
     padding-bottom: 100px;
     font-family: "spaceagecycillic";
     font-size: 48px;
     
 }
-
+.about__heading{
+    
+}
 .about {
     background-image:url(../img-about-us/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 2497px;
+    max-height: 2497px;
 
 } 
 
 .card {
     display: flex;
     gap:100px;
-    margin-bottom: 150px;
+    margin-bottom: 143px;
+    padding:6px 20px;
+}
+.about-title{
+    padding-left:21px;
+    padding-top:99px;
 }
 
-.card:nth-child(1){
-
-}
-.card:nth-child(){
-
-}
-.card__img {
-    margin-top: 7px;
-    margin-left: 8px;
-}
 
 
 .card__description{
-    display: block;
-    width:600px; 
+    display: flex;
+    flex-direction: column;
+    
 }
 .card__heading {
     font-family:"sf-pro-display" ;
     font-size: 30px;
-    margin-top: 3px;
+    margin-top: -3px;
+    letter-spacing:-0.1px;
 }
 .card__columns {
     display: flex;
     gap: 53px;
-    margin-bottom: 58px;
-    margin-top: 50px;
+    margin-bottom: 48px;
+    margin-top: 32px;
 }
-.card__columns li:nth-child(1){
-    margin-top: -18px;
-    margin-left: 0px;
+.card__columns li{
+    width: 165px;
+    text-align: left;
+    font-size: 16px;
     line-height: 19px;
-    font-size: 16px;
 }
-
-
-.card__columns li:nth-child(2){
-    line-height: 20px;
-    margin-top: -19px;
-    margin-left: -35px;
-    font-size: 16px;
-}  
-
 .card__columns li:nth-child(3){
-    margin-right: 31px;
-    margin-top: -13px;
+    width:170px;
+}
+.card__hint{
+    font-size:12px;
+    padding:22px 0px 1px 6px;
 }
 
 .card__label{
@@ -265,29 +262,33 @@ h2{
     font-size: 16px;
     font-family:"sf-pro-display" ;
     width: 105px;
-    gap: 20px;
-    padding: 10px 10px;
+    padding: 12px 0px;
 }
 .card__table-th:first-child {
     width: 105px;
     gap: 20px;
-    padding: 10px 10px 10px 0px;
+    
 }
 .card__table-th:last-child {
     width: 105px;
     gap: 20px;
-    padding: 10px 0px 10px 10px;
+    
 }
 .card__table-tr:first-child td {
     font-weight: 600;
     font-size: 36px;
 }
-
+.card__table-tr:last-child td {
+    padding: 5px 0px 8px 0px;
+}
 .card__table-tr td {
     text-align: center;
-    padding: 10px 0px 5px 0px;
     font-weight: 600;
     font-size: 14px;
+    padding:5px 0px 0px 0px;
+}
+.card:nth-child(2){
+    margin-bottom:141px;
 }
 .card:last-child{
     margin-bottom: 0;
@@ -309,12 +310,12 @@ h2{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 1000px;
 }
 .how-all-happens__heading{
     width: 578px;
-    padding-top: 168px;
-    padding-left: 4px;
+    padding-top: 99px;
+    padding-left: 15px;
 }
 
 
@@ -340,7 +341,8 @@ h2{
     background-position: center;     
     background-repeat: no-repeat;    
     background-size:cover; 
-    height: 100vh;
+    height: 914px;
+    max-height:914px;
     
 }
 .book__inner{
@@ -348,15 +350,16 @@ h2{
 }
 .book__header{
     width: 576px;
-    margin-right: 242px;
-    padding-top: 222px;
+    margin-right: 243px;
+    padding-top: 98px;
+    margin-left:7px;
 }
 
 .book__pharagraphs{
     display: flex;
     gap: 53px;
     font-size: 14px;
-    margin-top: 224px;
+    margin-top: 101px;
     line-height: 17px;
 }
 
@@ -477,19 +480,33 @@ h2{
 }
 .offer__title {
     width: 500px;
-    padding-top: 191px;
+    padding-top: 97px;
+    padding-left:18px;
 }
 
 .price{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:200px;
+    /* justify-content: center;
+    align-items: center; */
+    gap:164px;
+}
+.price__inner{
+    display:flex;
+    flex-direction: column;
+    margin:0px 17px;
 }
 .price__card{
     border: 1px solid white;
-    width: 500px;
     height: 400px;
+    width:499px;
+    margin-bottom: 24px;
+}
+.price__button{
+    margin:0;
+    width:500px;
+    font-size: 18px;
+    height:60px;
+    letter-spacing: -0.1px;
 }
 .price__discount{
     font-size: 24px;
@@ -517,17 +534,55 @@ h2{
 }
 .service{
     display: flex;
-    margin-top: -139px;
+}
+.service__heading{
+    padding-top:141px;
+    padding-left:11px;
 }
 .service-list{
     list-style-type: disc;
+    list-style-type: none;
+    margin:25px 0px 0px 20px;
+}
+.service-add{
+    font-size:24px;
+    margin-left:18px;
 }
 .service-button{
-    padding-top: 200px;
+    padding: top 88px;
+    font-size: 18px;
+    padding-left: 113px;
+    letter-spacing: 1px;
+
+}
+.service-button button{
+    width:500px;
+    margin-left:-2px;
+    font-size: 18px;
+    height: 59px;
+}
+
+.service-item{
+    font-size:24px;
+    letter-spacing: 0.05px;
+    position: relative;
+    line-height: 31px;
+    margin:0px 0px 0px 32px;
+}
+.service-item::before{
+    content:"";
+    position:absolute;
+    left:-35px;
+    top:6px;
+    display: block;
+    width:20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
 }
 .service-img{
-    padding-top: 100px;
-    padding-left: 386px;
+    padding-top: 101px;
+    padding-left: 306px;
     margin-bottom: -74px;
 }
 .gallery{

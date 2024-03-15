@@ -57,7 +57,7 @@
     <section class="about">
         <div class="gradient gradient-up">
             <div class="container" >
-                <h2>о нас</h2>
+                    <h2 class="about__title">о нас</h2>
                 <div class="card">
                     <img class="card__img" src="img-about-us\main_richard-branson-men-in-power_posta-magazine.jpg" width="500"height="540">
                     <div class="card__description">
@@ -66,7 +66,7 @@
                         <ul class="card__columns">
                             <li class="card__column"><p>Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический" суборбитальный полет со 
                                 своим основателем, британским миллиардером Ричардом Брэнсоном на борту.</p></li>
-                            <li class="card__column" ><p>Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью 
+                            <li class="card__column" ><p>Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с помощью<br> 
                                 самолета-носителя VMS Eve.Позже он отсоединился от самолета-носителя.</p></li>
                             <li class="card__column"><p>Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты 
                                 начнутся до 2022 года. </p></li>
@@ -83,14 +83,14 @@
                             </thead>
                             <tbody class="card__table-tbody">
                                 <tr class="card__table-tr">
-                                    <td class="card__table-td">10</td>
-                                    <td class="card__table-td">100</td>
+                                    <td class="card__table-td">1</td>
+                                    <td class="card__table-td">80</td>
                                     <td class="card__table-td">4-5</td>
                                     <td class="card__table-td">250</td>
                                     <td class="card__table-td">99</td>
                                 </tr>
                                 <tr class="card__table-tr">
-                                    <td class="card__table-td">мин</td>
+                                    <td class="card__table-td">час</td>
                                     <td class="card__table-td">км</td>
                                     <td class="card__table-td">мин</td>
                                     <td class="card__table-td">тыс. дол</td>
@@ -133,15 +133,17 @@
                                     <td class="card__table-td">250</td>
                                     <td class="card__table-td">99</td>
                                 </tr>
-                                <tr class="card__table-tbody">
+                                <tr class="card__table-tr">
                                     <td class="card__table-td">мин.</td>
                                     <td class="card__table-td">км.</td>
                                     <td class="card__table-td">мин.</td>
                                     <td class="card__table-td">тыс.дол.</td>
                                     <td class="card__table-td">%</td>
                                 </tr>
+                            </tbody>
                         </table>   
-                        <button class="button" type="button">забронировать полет</button>
+                        <span class="card__hint">стоимость 200-250 тыс. дол. по четным/нечетным или как повезет</span>
+                        <button class="button button-about" type="button">забронировать полет</button>
                     </div>
                     <img src="img-about-us\4f05a1c-------555.png">
                 </div>
@@ -189,7 +191,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button class="button" type="button">забронировать полет</button>
+                            <button class="button button-about" type="button">забронировать полет</button>
                         </div>
                 </div>
             </div>
@@ -263,43 +265,44 @@
         <div class="container">
             <h2 class="offer__title">Спец предложения</h2>
             <div class="price">
-                <div class="price__card">
-                    <div class="price__discount">
-                        <p>Забронируй полет<br> <span class="price__discount-action">прямо сейчас</span> <br>и получи скидку <br>1000 $</p>
+                <div class="price__inner">
+                    <div class="price__card">
+                        <div class="price__discount">
+                            <p>Забронируй полет<br> <span class="price__discount-action">прямо сейчас</span> <br>и получи скидку <br>1000 $</p>
+                        </div>
+                        <div class="price__old-price">
+                            <img src="img-special-offer/Line11.png" class="price__img">
+                            <p> 250 000 $</p>
+                        </div>
+                            <p class="price__current-price">249 000 $</p>
                     </div>
-                    <div class="price__old-price">
-                        <img src="img-special-offer/Line11.png" class="price__img">
-                        <p> 250 000 $</p>
-                    </div>
-                        <p class="price__current-price">249 000 $</p>
+                    <button class="price__button" type="button">Забронировать полет</button>
                 </div>
-                
-                <div class="price__card">
-                    <div class="price__discount">
-                        <p>Приведи друга и <br>получи <span class="price__discount-action"> скидку 10% </span><br>на следующий полет, <br>если вернешься</p>
+                <div class="price__inner">
+                    <div class="price__card">
+                        <div class="price__discount">
+                            <p>Приведи друга и <br>получи <span class="price__discount-action"> скидку 10% </span><br>на следующий полет, <br>если вернешься</p>
+                        </div>
+                        <div class="price__old-price">
+                            <img src="img-special-offer/Line11.png" class="price__img">
+                            <p> 250 000 $</p>
+                        </div>
+                            <p class="price__current-price">225 000 $</p>
                     </div>
-                    <div class="price__old-price">
-                        <img src="img-special-offer/Line11.png" class="price__img">
-                        <p> 250 000 $</p>
-                    </div>
-                        <p class="price__current-price">225 000 $</p>
+                    <button class="price__button" type="button">Забронировать полет</button>
                 </div>
-            </div>
-            <div class="button price">
-                <button type="button">Забронировать полет</button>
-                <button type="button">Забронировать полет</button>
             </div>
             <div class="service">
                 <div class="service-add">
-                    <h2>Дополнительные услуги</h2>
+                    <h2 class="service__heading">Дополнительные услуги</h2>
                     <p>С Вами полетит профессиональный фотограф</p>
                     <ul class="service-list">
-                        <li class="servise-item">20 фотографий в профессиональной обработке</li>
-                        <li class="servise-item">фото книга</li>
-                        <li class="servise-item">магнит на холодильник в подарок</li>
+                        <li class="service-item">20 фотографий в профессиональной обработке</li>
+                        <li class="service-item">фото книга</li>
+                        <li class="service-item">магнит на холодильник в подарок</li>
                     </ul>
                 </div>   
-                <div class="button service-button">
+                <div class="button service__button">
                     <div class="service-img" >
                     <img src="img-special-offer/cosmobutton.png" >
                     </div>
