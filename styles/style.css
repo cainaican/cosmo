@@ -1,3 +1,5 @@
+/* @import url("./bbbtn.css"); */
+
 * 
 ::after
 ::before{
@@ -30,6 +32,10 @@ ul{
     font-size: 18px;
 
 }
+img {
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     color:inherit;/*наследуемый*/
@@ -48,6 +54,7 @@ button{
     padding-bottom: 16px;
     width: 600px;
     margin-left: 18px;
+    cursor: pointer;
     padding-bottom: 14px;
     letter-spacing: -0.75px;
 }
@@ -63,7 +70,7 @@ button{
 
 .header{
     background-image:url("../img-cover/background1.jpg");
-    /* background-position: center;     картинка всегда по центру */
+    background-position: center;    /*картинка всегда по центру*/
     background-repeat: no-repeat;     /* не повторяется*/
     background-size:cover;         /* растянуть на все пространство*/
     height:1100px;          
@@ -120,15 +127,6 @@ button{
     margin-right: 134px;
     margin-top: 77px;
 }
-
-@media screen and (max-width: 1049px){
-    .header__top,.menu_list,.header__description{
-        flex-direction: column;
-        gap: 30px;
-        align-items:start;
-    }
-    
-    }
 
 .text{
     font-family: "spaceagecycillic";
@@ -774,4 +772,162 @@ ul[class="primary-nav"] + li:checked {
 /*013*/
 nav > a:hover::before {
 
+}
+
+
+@media (max-width: 1350px){
+   
+   
+}
+
+
+@media all and (max-width: 1049px){
+    .header__description{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .menu_list {
+        flex-direction: column;
+    }
+    .menu_item {
+        padding: 10px 0px;
+        font-size: 20px;
+    }
+    
+    .menu_item:nth-child(4) {
+       margin: 0;
+    }
+    .text {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .text2 {
+        text-align: center;
+    }
+    .content-text {
+        justify-content: center;
+    }
+    .header__button {
+        text-align: center;
+    }
+    .header__description {
+        display: flex;
+    }
+    .description-text {
+        margin-left: 0px;
+        justify-content: center;
+
+    }
+    .description-text p {
+        width: 30%;
+        line-height: 25px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px){
+    
+    .text {
+        font-size: 40px;
+    }
+
+    .text2 {
+        font-size: 74px;
+    }
+    
+    .content-text {
+        font-size: 16px;
+    }
+    button {
+        width: 60%;
+        font-size: 18px;
+    }
+    .header__burger-button button {
+        width: 50px;
+        height: 30px;
+        border: 4px solid white;
+        border-left: none;
+        border-right: none;
+        position: relative;
+    }
+    .header__burger-button button:hover {
+        margin-top: 50px;
+        /* border-color: #CB0E0E; */
+    }
+    
+    .header__burger-button button:hover {
+        margin-top: 50px;
+        /* border-color: #CB0E0E; */
+    }
+
+    .header__burger-button button::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        left: 0px;
+        border-top: 4px solid white;
+        top: 13px;
+    }
+    /* .header__burger-button button:hover .header__burger-button button::before {
+        border-color: #CB0E0E;
+    } */
+
+    
+    /* .header__burger-button2 input {
+        width: 50px;
+        height: 30px;
+        border: none;
+    } */
+    .header__burger-button2 input{
+        display: hidden;
+    }
+    
+    .header__burger-button2 input svg:hover{
+        stroke: #CB0E0E;
+    }
+    .header__top {
+        position: relative;
+    }
+    .menu {
+        top: -300px;
+        left: -10px;
+        position: absolute;
+        width: calc(100% + 20px);
+        height: 300px;
+        background-color: black;
+    }
+
+    .phone {
+        margin-left: 30px;
+    }
+    .header {
+        max-height: 900px;
+    }
+}
+
+@media (max-width: 460px)  {
+    .header {
+        max-height: 670px;
+    }
+    .description-text p {
+        font-size: 14px;
+    }
+    button {
+        width: 70%;
+        font-size: 14px;
+    }
+    .content-text {
+        font-size: 11px;
+    }
+    .text2 {
+        font-size: 53px;
+    }
+    .text {
+        font-size: 29px;
+    }
+    .phone__number {
+        font-size: 14px;
+    }
 }
